@@ -1,0 +1,19 @@
+# Nom du modèle
+name: sudoku_detection
+
+# Chemins vers les données
+path: dataset/  # Dossier contenant les données
+train: images/train  # Dossier des images d'entraînement
+val: images/val      # Dossier des images de validation
+
+# Classes
+nc: 9  # Nombre de classes (chiffres de 1 à 9)
+names: ['1', '2', '3', '4', '5', '6', '7', '8', '9']  # Noms des classes
+
+# Paramètres d'entraînement
+epochs: 50          # Nombre d'époques
+batch: 16           # Taille du batch
+imgsz: 640          # Taille des images d'entrée
+lr0: 0.01           # Taux d'apprentissage initial
+momentum: 0.937     # Momentum
+weight_decay: 0.0005 # Décroissance du poids
