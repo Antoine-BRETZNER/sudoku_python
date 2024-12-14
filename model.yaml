@@ -1,0 +1,6 @@
+train: dataset/images/train  # Path to your training dataset
+val: dataset/images/val  # Path to your validation dataset
+
+nc: 9 # Nombre de classes (1-9)
+
+names: ['1', '2', '3', '4', '5', '6', '7', '8', '9']
