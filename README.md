@@ -1,4 +1,4 @@
-# Sudoku Solver
+# 🔢 Sudoku Solver
 
 Ce projet propose une solution complète pour la détection et la résolution des grilles de Sudoku à partir d'images. Il est structuré en deux versions : 
 - Une version classique (`sudoku.py`) qui fonctionne via le terminal.

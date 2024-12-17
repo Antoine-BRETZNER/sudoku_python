@@ -67,12 +67,16 @@ if __name__ == "__main__":
                         detected_class = int(box.cls.item())
                         detected_grid[i][j] = detected_class
 
-    print("La grille ci-dessous a été chargée :")
+    print("\n┌───────────────────────┐")
+    print("│  🔢 GRILLE CHARGÉE    │")
+    print("└───────────────────────┘\n")
     solver = SudokuSolver()
     solver.affiche(detected_grid)
 
     if solver.genere(detected_grid):
-        print("La grille résolue est :")
+        print("┌───────────────────────┐")
+        print("│   🕹️  SUDOKU RÉSOLU    │")
+        print("└───────────────────────┘\n")
         solver.affiche(detected_grid)
     else:
         print("Cette grille n'est pas résolvable !")

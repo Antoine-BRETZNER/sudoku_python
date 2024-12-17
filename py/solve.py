@@ -65,9 +65,29 @@ class SudokuSolver:
                     return False
 
     @staticmethod
-    def affiche(M):
-        for line in M:
-            print(" ".join(f"{num:2}" for num in line))
+    def affiche(grille):
+        horizontal_sep = "─" * 7
+        middle_sep = "├" + "┼".join([horizontal_sep]*3) + "┤"
+        top_border = "┌" + "┬".join([horizontal_sep]*3) + "┐"
+        bottom_border = "└" + "┴".join([horizontal_sep]*3) + "┘"
+        
+        print(top_border)
+        
+        for i in range(9):
+            row = ""
+            for j in range(9):
+                val = str(grille[i][j]) if grille[i][j] != 0 else " "
+                if j % 3 == 0:
+                    row += "│ "
+                row += val + " "
+            row += "│"
+            print(row)
+            
+            if i % 3 == 2 and i != 8:
+                print(middle_sep)
+        
+        print(bottom_border)
+        print()
 
     @staticmethod
     def sauvegarde(grid, fichier):
