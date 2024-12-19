@@ -12,5 +12,5 @@ def plot_image(image, title=None):
     plt.imshow(image_rgb)
     if title:
         plt.title(title)
-    plt.axis('off')  # Optionnel : cacher les axes
+    plt.axis('off')
     plt.show()

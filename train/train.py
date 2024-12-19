@@ -1,10 +1,9 @@
-# Importer les bibliothèques nécessaires
 import os
 from ultralytics import YOLO
 
 # Variables configurables
 data_yaml = os.path.join(os.path.dirname(__file__), 'model.yaml')
-model_config = 'yolov8n.pt'  # Remplacer par la version de votre modèle si différent
+model_config = 'yolov8n.pt'  # Configuration du modèle
 model_name = 'my_trained_model'  # Nom du modèle entraîné
 
 # Charger le modèle
